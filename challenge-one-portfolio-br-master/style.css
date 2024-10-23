@@ -1,0 +1,363 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    text-align: left;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ---------------------------T--- Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+    padding-left: 100px;
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-right: 650px;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao { 
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 100px;
+    text-align: left;
+}
+
+.apresentacao__subtitulo {
+    font-size: 22px;
+}
+
+.apresentacao__foto {
+    padding: 5%;
+}
+
+.redes { 
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0%;
+    font-size: 16px;
+    
+}
+.apresentacao__foto {
+    display: flex;
+    justify-content: center;
+}
+.apresentacao__titulo {
+    font-size: 52px;
+}
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim {
+    padding: 100px;
+}
+
+.sobre-mim__titulo {
+    font-size: 32px;
+    
+}
+
+.sobre-mim__texto {
+    font-size: 16px;
+    text-align: left;
+}
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidades__titulos {
+    font-size: 32px;
+    margin-bottom: 20px; /* Espaçamento entre o título e a lista */
+    text-align: center; /* Alinha o título ao centro */
+}
+
+.habilidades__lista {
+    display: flex;
+    flex-direction: row; /* Organiza os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
+    gap: 150px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens na linha */
+    padding: 20px 0; /* Espaçamento ao redor da lista */
+}
+
+.habilidades__elemento {
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Borda para destacar o quadrado */
+    padding: 20px; /* Espaçamento interno do quadrado */
+    border-radius: 8px; /* Cantos levemente arredondados (opcional) */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para o quadrado */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    width: 120px; /* Largura fixa para o quadrado */
+    height: 120px; /* Altura fixa para o quadrado */
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies__lista {
+    display: flex;
+    flex-direction: row; /* Organiza os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
+    gap: 150px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens na linha */
+    padding: 20px 0; /* Espaçamento ao redor da lista */
+}
+
+.hobbies__elemento {
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Borda para destacar o quadrado */
+    padding: 20px; /* Espaçamento interno do quadrado */
+    border-radius: 8px; /* Cantos levemente arredondados (opcional) */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para o quadrado */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    width: 120px; /* Largura fixa para o quadrado */
+    height: 120px; /* Altura fixa para o quadrado */
+}
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formacao__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    gap: 100px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0;
+}
+
+.formacao__elemento {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px; /* Tamanho fixo do bloco de cada formação */
+    height: auto;
+}
+
+
+.formacao__icone {
+    width: 100px; /* Ajuste para o tamanho desejado */
+    height: 60px; /* Força a altura para o mesmo tamanho */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaço entre o ícone e o nome da formação */
+}
+
+.formacao__nome {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formacao__detalhe {
+    font-size: 14px;
+    color: #666;
+}
+
+/*------------------------------------Seção de Projetos------------------------------------*/
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 200px;
+}
+
+.projetos__conteiner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.decodi__texto {
+   width: 1000px;
+   height: auto;
+   margin-right: 20px;
+}
+
+.projetos__botao {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    background-color: #007BFF; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+.projetos__botao:hover {
+    background-color: #0056b3; /* Cor de fundo quando o mouse passa sobre o botão */
+}
+
+
+.numero__secreto {
+    width: 1000px;
+    height: auto;
+    margin-left: 20px;
+}
+
+
+.projetos__conteiner__Segundo {
+    display: flex; /* Usar flexbox para o layout */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaça os itens */
+    margin-bottom: 20px; /* Espaço entre as seções */
+}
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Altere a cor de fundo, se desejar */
+}
+
+.contato__titulo {
+    font-size: 2em; /* Tamanho maior para o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Define uma largura máxima */
+    gap: 15px; /* Espaço entre os campos do formulário */
+}
+
+.contato__campo {
+    padding: 10px; /* Espaço interno nos campos */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1em; /* Tamanho de fonte para os campos */
+    font-family: 'Raleway', sans-serif; /* Certifique-se de que a fonte esteja definida aqui também */
+}
+
+.contato__botao {
+    padding: 10px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Animação suave para a mudança de cor */
+}
+
+.contato__botao:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
